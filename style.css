@@ -14,10 +14,8 @@ input,textarea,select{font-family:inherit}
 
 .preloader{position:fixed;inset:0;z-index:9999;background:var(--navy-900);display:flex;align-items:center;justify-content:center;transition:opacity .6s,visibility .6s}
 .preloader.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.preloader-svg{width:80px;height:80px;animation:preloaderSpin 1.5s linear infinite}
-.preloader-circle{fill:none;stroke:var(--amber-500);stroke-width:3;stroke-dasharray:280;stroke-dashoffset:200;animation:preloaderDash 1.5s ease-in-out infinite}
-@keyframes preloaderSpin{to{transform:rotate(360deg)}}
-@keyframes preloaderDash{0%{stroke-dashoffset:280}50%{stroke-dashoffset:80}100%{stroke-dashoffset:280}}
+.preloader-logo{width:120px;height:auto;animation:preloaderPulse 2s ease-in-out infinite;filter:drop-shadow(0 0 20px rgba(245,158,11,.3))}
+@keyframes preloaderPulse{0%,100%{transform:scale(1);opacity:.8}50%{transform:scale(1.05);opacity:1}}
 .preloader-text{display:block;margin-top:20px;color:var(--white);font-size:18px;font-weight:600;letter-spacing:3px;text-transform:uppercase}
 
 .cursor{display:none}
