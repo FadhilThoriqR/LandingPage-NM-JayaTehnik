@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NM JayaTeknik - Jasa Service Pompa Air & Pembuatan Sumur Bor 24 Jam Jakarta</title>
+  <meta name="description" content="NM JayaTeknik melayani Jasa Service Pompa Air, Pengeboran Sumur, Pemasangan Filter Air di Jakarta, Bekasi, Depok. Bergaransi, Harga Terjangkau.">
+  <meta name="keywords" content="service pompa air, sumur bor, pengeboran sumur, filter air, jakarta, bekasi, depok">
+  <meta property="og:title" content="NM JayaTeknik - Service Pompa Air & Sumur Bor 24 Jam">
+  <meta property="og:description" content="Penyedia layanan profesional untuk kebutuhan air Anda. Bergaransi dan harga terjangkau.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.nmjayatehnik.com/">
+  <link rel="canonical" href="https://www.nmjayatehnik.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <svg viewBox="0 0 120 120" class="preloader-svg">
+        <circle cx="60" cy="60" r="50" class="preloader-circle"/>
+      </svg>
+      <span class="preloader-text">NM JayaTeknik</span>
+    </div>
+  </div>
+
+  <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo magnetic" data-strength="20">
+        <img src="images/Logo Transparan NM.png" alt="Logo NM JayaTeknik" style="height:40px;width:auto;">
+        <div class="logo-text">
+          <span class="logo-name">NM JayaTeknik</span>
+          <span class="logo-tagline">Service Pompa & Bor Air</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda" class="magnetic" data-strength="15">Beranda</a></li>
+        <li><a href="#layanan" class="magnetic" data-strength="15">Layanan</a></li>
+        <li><a href="#tentang" class="magnetic" data-strength="15">Keunggulan</a></li>
+        <li><a href="#testimoni" class="magnetic" data-strength="15">Testimoni</a></li>
+        <li><a href="#kontak" class="magnetic" data-strength="15">Kontak</a></li>
+      </ul>
+      <button class="nav-toggle magnetic" data-strength="10" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <section class="hero" id="beranda">
+    <div class="hero-bg">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-blob blob-3"></div>
+      <div class="hero-grid-overlay"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-label-wrap reveal-up">
+          <span class="hero-label">Melayani 24 Jam - Jakarta, Bekasi, Depok</span>
+        </div>
+        <h1 class="hero-title">
+          <div class="line-wrap"><span class="line-inner">NM JayaTeknik</span></div>
+          <div class="line-wrap"><span class="line-inner accent"><em>Jasa Service Pompa & Bor Air</em></span></div>
+        </h1>
+        <p class="hero-desc reveal-up" data-delay="0.4">
+          Solusi profesional untuk kebutuhan air bersih Anda. Teknisi berpengalaman, harga terjangkau, dan bergaransi.
+        </p>
+        <div class="hero-actions reveal-up" data-delay="0.6">
+          <a href="https://api.whatsapp.com/send?phone=6285817635852&text=Halo%20NM%20JayaTeknik%2C%20saya%20ingin%20konsultasi%20gratis." target="_blank" rel="noopener" class="btn btn-primary magnetic" data-strength="25">
+            <span>Konsultasi Gratis</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+          <a href="#layanan" class="btn btn-outline magnetic" data-strength="25">
+            <span>Lihat Layanan</span>
+          </a>
+        </div>
+        <div class="hero-stats reveal-up" data-delay="0.8">
+          <div class="stat">
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Tahun Pengalaman</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-target="1000">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Klien Puas</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-target="500">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Proyek Selesai</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual reveal-scale" data-delay="0.3">
+        <div class="hero-card tilt-card">
+          <div class="hero-card-bg"></div>
+          <div class="hero-card-inner">
+            <div class="hero-card-info">
+              <h3>Layanan Kami</h3>
+              <p>Service pompa air, pengeboran sumur, pemasangan filter, dan perbaikan instalasi pipa.</p>
+              <div class="hero-card-badges">
+                <span>Service Pompa</span>
+                <span>Sumur Bor</span>
+                <span>Filter Air</span>
+                <span>24 Jam</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card-glow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll magnetic" data-strength="10">
+      <a href="#layanan">
+        <span class="scroll-text">Scroll</span>
+        <span class="scroll-line"></span>
+      </a>
+    </div>
+  </section>
+
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Service Pompa Air ✦</span>
+        <span>Pengeboran Sumur ✦</span>
+        <span>Pemasangan Filter ✦</span>
+        <span>Instalasi Pipa ✦</span>
+        <span>Air Bersih ✦</span>
+        <span>Bergaransi ✦</span>
+        <span>24 Jam ✦</span>
+        <span>Harga Terjangkau ✦</span>
+        <span>Service Pompa Air ✦</span>
+        <span>Pengeboran Sumur ✦</span>
+        <span>Pemasangan Filter ✦</span>
+        <span>Instalasi Pipa ✦</span>
+        <span>Air Bersih ✦</span>
+        <span>Bergaransi ✦</span>
+        <span>24 Jam ✦</span>
+        <span>Harga Terjangkau ✦</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="services" id="layanan">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal-up">Layanan Kami</span>
+        <h2 class="section-title">
+          <div class="line-wrap"><span class="line-inner">Solusi <em>Air Bersih</em></span></div>
+        </h2>
+        <p class="section-desc reveal-up" data-delay="0.2">Solusi lengkap untuk semua kebutuhan air bersih di rumah dan bisnis Anda.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card tilt-card reveal-up" data-delay="0">
+          <div class="card-shine"></div>
+          <img src="images/Jasa Service Mesin Pompa Air.jpg" alt="Service pompa air" class="card-img">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3>Service Pompa Air</h3>
+          <p>Perbaikan dan perawatan segala jenis mesin pompa air untuk rumah tangga dan bisnis.</p>
+        </div>
+        <div class="service-card tilt-card reveal-up" data-delay="0.1">
+          <div class="card-shine"></div>
+          <img src="images/Jasa Pengeboran Sumur dengan sumur.jpg" alt="Pengeboran sumur" class="card-img">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"/></svg>
+          </div>
+          <h3>Pengeboran Sumur</h3>
+          <p>Jasa pengeboran sumur dengan mesin modern untuk hasil yang dalam dan bersih.</p>
+        </div>
+        <div class="service-card tilt-card reveal-up" data-delay="0.2">
+          <div class="card-shine"></div>
+          <img src="images/Jasa Pengeboran Sumur Manual.jpg" alt="Mengatasi air sumur" class="card-img">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Mengatasi Air Sumur</h3>
+          <p>Solusi air kuning, bau, keruh, dan berpasir agar air kembali jernih dan bersih.</p>
+        </div>
+        <div class="service-card tilt-card reveal-up" data-delay="0.3">
+          <div class="card-shine"></div>
+          <img src="images/Jasa Pemasangan Filter.jpg" alt="Service filter air" class="card-img">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg>
+          </div>
+          <h3>Service Filter Air</h3>
+          <p>Pemasangan dan perbaikan filter air untuk air bersih dan jernih di rumah Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item reveal-up" data-delay="0">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">✦</div>
+            <div class="feature-ring"></div>
+          </div>
+          <h4>Tim Profesional</h4>
+          <p>Teknisi berpengalaman dan terlatih untuk meminimalisir kesalahan saat bekerja.</p>
+        </div>
+        <div class="feature-item reveal-up" data-delay="0.1">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">◈</div>
+            <div class="feature-ring"></div>
+          </div>
+          <h4>Harga Terjangkau</h4>
+          <p>Harga terbaik di pasaran tanpa mengurangi kualitas layanan. Transparan.</p>
+        </div>
+        <div class="feature-item reveal-up" data-delay="0.2">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">❖</div>
+            <div class="feature-ring"></div>
+          </div>
+          <h4>Survey Gratis</h4>
+          <p>Kami survey lokasi terlebih dahulu untuk memperhitungkan langkah terbaik.</p>
+        </div>
+        <div class="feature-item reveal-up" data-delay="0.3">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">✧</div>
+            <div class="feature-ring"></div>
+          </div>
+          <h4>Bergaransi</h4>
+          <p>Semua pekerjaan kami bergaransi. Kepuasan pelanggan adalah prioritas utama.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="tentang">
+    <div class="container about-container">
+      <div class="about-visual reveal-left">
+        <div class="about-image-wrapper">
+          <div class="about-image parallax-img" data-speed="0.1">
+            <img src="images/Hasil Kerja Tim.jpg" alt="Tim NM JayaTeknik">
+            <div class="about-badge reveal-scale" data-delay="0.5">
+              <span class="badge-number" data-target="10">0</span>
+              <span class="badge-plus">+</span>
+              <span class="badge-text">Tahun Melayani</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-label reveal-up">Tentang Kami</span>
+        <h2 class="section-title">
+          <div class="line-wrap"><span class="line-inner">Mitra Terpercaya</span></div>
+          <div class="line-wrap"><span class="line-inner">Untuk <em>Kebutuhan Air</em></span></div>
+        </h2>
+        <p class="about-text reveal-up" data-delay="0.2">
+          NM JayaTeknik adalah penyedia layanan profesional untuk kebutuhan air Anda. Kami melayani Jasa Service Pompa Air, Jasa Pengeboran Sumur, Pemasangan Filter Air, hingga perbaikan instalasi pipa di area Jakarta, Bekasi, Depok, dan sekitarnya. Dengan pengalaman bertahun-tahun dan teknisi profesional, kami siap memberikan solusi cepat, tepat, murah, dan bergaransi.
+        </p>
+        <p class="about-text reveal-up" data-delay="0.3">
+          Kami memahami betapa pentingnya air bersih untuk rumah Anda dan bisnis Anda. Oleh karena itu, NM JayaTeknik selalu mengutamakan kualitas pelayanan, ketepatan waktu, serta kepuasan pelanggan. Hubungi kami sekarang untuk konsultasi gratis dan perbaikan pompa air dengan hasil terbaik.
+        </p>
+        <ul class="about-list reveal-up" data-delay="0.4">
+          <li>Teknisi profesional dan berpengalaman</li>
+          <li>Survey gratis sebelum pengerjaan</li>
+          <li>Harga transparan tanpa biaya tersembunyi</li>
+          <li>Bergaransi untuk semua layanan</li>
+        </ul>
+        <div class="reveal-up" data-delay="0.5">
+          <a href="https://api.whatsapp.com/send?phone=6285817635852" target="_blank" rel="noopener" class="btn btn-primary magnetic" data-strength="25">
+            <span>Hubungi Kami</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-section marquee-reverse">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Profesional ✦</span>
+        <span>Bergaransi ✦</span>
+        <span>Terpercaya ✦</span>
+        <span>Harga Terjangkau ✦</span>
+        <span>24 Jam ✦</span>
+        <span>Jakarta ✦</span>
+        <span>Bekasi ✦</span>
+        <span>Depok ✦</span>
+        <span>Profesional ✦</span>
+        <span>Bergaransi ✦</span>
+        <span>Terpercaya ✦</span>
+        <span>Harga Terjangkau ✦</span>
+        <span>24 Jam ✦</span>
+        <span>Jakarta ✦</span>
+        <span>Bekasi ✦</span>
+        <span>Depok ✦</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="testimonials" id="testimoni">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal-up">Testimoni</span>
+        <h2 class="section-title">
+          <div class="line-wrap"><span class="line-inner">Apa Kata <em>Pelanggan</em></span></div>
+        </h2>
+      </div>
+    </div>
+    <div class="testimonial-marquee">
+      <div class="testimonial-marquee-track" id="testimonialTrack">
+        <div class="testimonial-marquee-card tilt-card">
+          <div class="card-shine"></div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Air di rumah saya sudah tidak kuning dan sudah tidak bau lagi. Terima kasih."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MI</div>
+            <div class="author-info"><span class="author-name">Muhammad Idham</span><span class="author-role">Pelanggan</span></div>
+          </div>
+        </div>
+        <div class="testimonial-marquee-card tilt-card">
+          <div class="card-shine"></div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Pekerjaannya rapi, air jadi kencang. Sukses terus ya!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AP</div>
+            <div class="author-info"><span class="author-name">Ary Prasetyo</span><span class="author-role">Pelanggan</span></div>
+          </div>
+        </div>
+        <div class="testimonial-marquee-card tilt-card">
+          <div class="card-shine"></div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Setelah diperbaiki, mesin pompa air dan sumurnya tidak berisik. Air besar, jernih, dan lancar."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">WF</div>
+            <div class="author-info"><span class="author-name">Wildanul Fallah</span><span class="author-role">Pelanggan</span></div>
+          </div>
+        </div>
+        <div class="testimonial-marquee-card tilt-card">
+          <div class="card-shine"></div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Responnya cepat, teknisinya ramah. Pompa air saya yang sudah mati total bisa hidup lagi."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RH</div>
+            <div class="author-info"><span class="author-name">Rahmat Hidayat</span><span class="author-role">Jakarta Selatan</span></div>
+          </div>
+        </div>
+        <div class="testimonial-marquee-card tilt-card">
+          <div class="card-shine"></div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Sumur bor yang dibuat hasilnya luar biasa. Airnya jernih dan tidak pernah kekeringan."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SN</div>
+            <div class="author-info"><span class="author-name">Siti Nurhaliza</span><span class="author-role">Bekasi</span></div>
+          </div>
+        </div>
+        <div class="testimonial-marquee-card tilt-card">
+          <div class="card-shine"></div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Filter air yang dipasang sangat bagus. Air keruh di rumah saya langsung jernih."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DK</div>
+            <div class="author-info"><span class="author-name">Dedi Kurniawan</span><span class="author-role">Depok</span></div>
+          </div>
+        </div>
+        <div class="testimonial-marquee-card tilt-card">
+          <div class="card-shine"></div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Sudah 3 kali pakai jasa NM JayaTeknik. Hasilnya selalu memuaskan dan bergaransi."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AW</div>
+            <div class="author-info"><span class="author-name">Ahmad Wijaya</span><span class="author-role">Jakarta Barat</span></div>
+          </div>
+        </div>
+        <div class="testimonial-marquee-card tilt-card">
+          <div class="card-shine"></div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Pelayanan 24 jam benar-benar dibuktikan. Malam hari pompa rusak, pagi sudah diperbaiki."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">BS</div>
+            <div class="author-info"><span class="author-name">Budi Santoso</span><span class="author-role">Jakarta Timur</span></div>
+          </div>
+        </div>
+        <div class="testimonial-marquee-card tilt-card">
+          <div class="card-shine"></div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Pengeboran sumur manual selesai tepat waktu. Airnya langsung mengalir deras."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">LP</div>
+            <div class="author-info"><span class="author-name">Lestari Putri</span><span class="author-role">Tangerang</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-bg-text">AIR</div>
+        <h2 class="cta-title reveal-up">
+          <div class="line-wrap"><span class="line-inner">Butuh Bantuan</span></div>
+          <div class="line-wrap"><span class="line-inner"><em>Kebutuhan Air?</em></span></div>
+        </h2>
+        <p class="cta-desc reveal-up" data-delay="0.2">Hubungi kami sekarang dan dapatkan konsultasi gratis untuk kebutuhan air bersih Anda.</p>
+        <div class="cta-actions reveal-up" data-delay="0.4">
+          <a href="https://api.whatsapp.com/send?phone=6285817635852&text=Halo%20NM%20JayaTeknik%2C%20saya%20butuh%20bantuan%20layanan." target="_blank" rel="noopener" class="btn btn-primary btn-lg magnetic" data-strength="25">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span>Chat WhatsApp</span>
+          </a>
+          <a href="#kontak" class="btn btn-outline btn-lg magnetic" data-strength="25">
+            <span>Lihat Lokasi</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="kontak">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal-up">Hubungi Kami</span>
+        <h2 class="section-title">
+          <div class="line-wrap"><span class="line-inner">Konsultasi <em>Gratis</em></span></div>
+        </h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item reveal-up" data-delay="0">
+            <div class="contact-icon magnetic" data-strength="10">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div><h4>Alamat</h4><p>Jl. Pangeran Antasari, Cipete Utara RT 03 RW 06, Jakarta Selatan</p></div>
+          </div>
+          <div class="contact-item reveal-up" data-delay="0.1">
+            <div class="contact-icon magnetic" data-strength="10">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div><h4>WhatsApp</h4><p>+62 858 1763 5852</p></div>
+          </div>
+          <div class="contact-item reveal-up" data-delay="0.2">
+            <div class="contact-icon magnetic" data-strength="10">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div><h4>Telepon</h4><p>+62 858 8299 4589</p></div>
+          </div>
+          <div class="contact-item reveal-up" data-delay="0.3">
+            <div class="contact-icon magnetic" data-strength="10">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div><h4>Jam Operasional</h4><p>24 Jam / 7 Hari</p></div>
+          </div>
+          <div class="contact-item reveal-up" data-delay="0.4">
+            <div class="contact-icon magnetic" data-strength="10">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div><h4>Email</h4><p>NMjayatehnik@gmail.com</p></div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper reveal-right" data-delay="0.2">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+              <div class="input-line"></div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Nomor WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx" required>
+              <div class="input-line"></div>
+            </div>
+            <div class="form-group">
+              <label for="service">Layanan</label>
+              <select id="service" name="service">
+                <option value="">Pilih layanan</option>
+                <option value="Service Pompa Air">Service Pompa Air</option>
+                <option value="Pembuatan Sumur Bor">Pembuatan Sumur Bor</option>
+                <option value="Mengatasi Air Sumur">Mengatasi Air Sumur</option>
+                <option value="Service Filter Air">Service Filter Air</option>
+              </select>
+              <div class="input-line"></div>
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="4" placeholder="Ceritakan kebutuhan Anda..." required></textarea>
+              <div class="input-line"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full magnetic" data-strength="20">
+              <span>Kirim via WhatsApp</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand reveal-up">
+          <a href="#" class="logo">
+            <img src="images/Logo Transparan NM.png" alt="Logo NM JayaTeknik" style="height:36px;width:auto;">
+            <div class="logo-text">
+              <span class="logo-name">NM JayaTeknik</span>
+              <span class="logo-tagline">Service Pompa & Bor Air</span>
+            </div>
+          </a>
+          <p class="footer-desc">Solusi profesional untuk kebutuhan air bersih Anda. Bergaransi dan harga terjangkau.</p>
+        </div>
+        <div class="footer-links reveal-up" data-delay="0.1">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#tentang">Keunggulan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-links reveal-up" data-delay="0.2">
+          <h4>Layanan</h4>
+          <ul>
+            <li><a href="#">Service Pompa Air</a></li>
+            <li><a href="#">Pengeboran Sumur</a></li>
+            <li><a href="#">Mengatasi Air Sumur</a></li>
+            <li><a href="#">Service Filter Air</a></li>
+          </ul>
+        </div>
+        <div class="footer-links reveal-up" data-delay="0.3">
+          <h4>Ikuti Kami</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/NMJayatehnik" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://www.instagram.com/NMJayatehnik" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 NM JayaTeknik. Semua hak dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=6285817635852&text=Halo%20NM%20JayaTeknik%2C%20saya%20butuh%20bantuan%20layanan." target="_blank" rel="noopener" class="wa-float" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
